@@ -6,6 +6,7 @@ import Temperature from "./Temperature";
 import Description from "./Description";
 import MoreInfo from "./MoreInfo";
 import Forecast from "./Forecast";
+import Footer from "./Footer";
 
 import "./styles.css";
 
@@ -35,16 +36,7 @@ export default function App() {
           <Forecast />
         </div>
       </div>
-      <small>
-        Coded and designed by
-        <a href="https://vleng.co.uk">&nbsp;Vanessa Leng&nbsp;</a>|
-        <a
-          href="https://github.com/vleng-gangkangkung/my-weather-app"
-          title="View on Github"
-        >
-          &nbsp;Open Source Code
-        </a>
-      </small>
+      <Footer />
     </div>
   );
 }

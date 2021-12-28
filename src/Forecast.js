@@ -1,5 +1,5 @@
 import React from "react";
-import ForecastDay from "./components/ForecastDay.jsx";
+import ForecastDay from "./components/ForecastDay.js";
 
 import "./styles.css";
 export default function Forecast() {

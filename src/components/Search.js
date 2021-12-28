@@ -7,7 +7,7 @@ export default function Search() {
     <div className="col-10">
       <form>
         <div className="form-row">
-          <div className="col-md-8">
+          <div className="col-md-9">
             <div className="form-group">
               <input
                 type="text"
@@ -22,7 +22,7 @@ export default function Search() {
               <input type="submit" value="search" className="searchCopy btn" />
             </div>
           </div>
-          <div className="col-1">
+          <div className="col-1 pl-3 ">
             <Location />
           </div>
         </div>
