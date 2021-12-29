@@ -6,9 +6,11 @@ import "./styles.css";
 
 export default function Header() {
   return (
-    <div className="row mt-4 ">
-      <Search />
-      <ToggleBg />
+    <div className="Header">
+      <div className="row mt-4">
+        <Search />
+        <ToggleBg />
+      </div>
     </div>
   );
 }

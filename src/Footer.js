@@ -4,7 +4,7 @@ import "./styles.css";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="Footer">
       <small>
         Coded and designed by
         <a href="https://vleng.co.uk">&nbsp;Vanessa Leng&nbsp;</a>|

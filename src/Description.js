@@ -1,10 +1,11 @@
 import React from "react";
 
-import "./styles.css";
+import "./Temperature.css";
+
 export default function Description() {
   return (
-    <div className="weatherHeading mt-4" id="weather-description">
-      Broken Clouds
+    <div className="Description">
+      <div className="weatherHeading mt-4">Broken Clouds</div>
     </div>
   );
 }

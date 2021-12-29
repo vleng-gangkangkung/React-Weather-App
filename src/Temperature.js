@@ -1,20 +1,24 @@
 import React from "react";
-import "./styles.css";
 
-export default function Temperature() {
+import "./Temperature.css";
+
+export default function Temperature(props) {
   return (
-    <div className="temp mt-4">
-      <span id="main-temp-display">25</span>
-      <span class="degreeSymbol">&#176;</span>
-      <span id="celcius" class="mainUnit">
-        <a href="#" title="Convert to Celcius">
-          C
-        </a>
-      </span>
-      <span id="fahrenheit" class="secondaryUnit" title="Convert to Fahrenheit">
-        <a href="#">F</a>
-      </span>
-      <div></div>
+    <div className="Temperature">
+      <div className="temp mt-3">
+        <span id="main-temp-display">{props.mainTemp}</span>
+        <span class="degreeSymbol">&#176;</span>
+        <span id="celcius" class="mainUnit" title="Convert to Celcius">
+          <a href="/">C</a>
+        </span>
+        <span
+          id="fahrenheit"
+          class="secondaryUnit"
+          title="Convert to Fahrenheit"
+        >
+          <a href="/">F</a>
+        </span>
+      </div>
     </div>
   );
 }

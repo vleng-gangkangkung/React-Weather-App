@@ -25,7 +25,7 @@ export default function App() {
           <div className="cityName mb-3 mt-4">SAN FRANCISCO</div>
           <div className="row line-shadow pb-2">
             <div className="col-md-7">
-              <Temperature />
+              <Temperature mainTemp={25} />
               <Description />
               <MoreInfo />
             </div>

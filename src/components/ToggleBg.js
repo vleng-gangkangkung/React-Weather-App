@@ -3,17 +3,15 @@ import React from "react";
 import "../styles.css";
 export default function ToggleBg() {
   return (
-    <div class="col-2">
-      <div class="dayNight">
-        <div class="line-shadow daytime">
-          <a href="#" onclick="changeLight()" title="Change to light theme">
-            LIGHT
-          </a>
-        </div>
+    <div className="ToggleBg">
+      <div class="dayNight line-shadow toggle pb-2">
+        <a href="/" onclick="changeLight()" title="Change to light theme">
+          <span>LIGHT</span>
+        </a>
       </div>
       <div class="dayNight">
-        <div class="evening">
-          <a href="#" onclick="changeDark()" title="Change to dark theme">
+        <div class="toggle">
+          <a href="/" onclick="changeDark()" title="Change to dark theme">
             DARK
           </a>
         </div>
