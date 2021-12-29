@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles.css";
-export default function MoreInfo() {
+export default function MoreInfo(props) {
   return (
     <div>
       <div className="row weather-description mt-5 mb-5">
@@ -9,16 +9,16 @@ export default function MoreInfo() {
           <div className="border-dates">
             <strong>Last updated</strong>
             <br />
-            <span>Wednesday</span>, <span>17:00 </span>
+            <span>{props.day}</span>, <span>{props.time}</span>
             <br />
-            <span>24 September</span>
+            <span>{props.date}</span>
           </div>
         </div>
 
         <div className="col-6">
-          <div>Humidity: 1%</div>
-          <div>59% Wind: 7 mph</div>
-          <div>Feels like: 10°C</div>
+          <div>Humidity: {props.humidity}%</div>
+          <div>Windspeed: {props.windSpeed}mph</div>
+          <div>Feels like: {props.realFeel}&#176;C</div>
         </div>
       </div>
     </div>

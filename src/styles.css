@@ -27,6 +27,7 @@ small a {
   font-size: 7rem;
   letter-spacing: 2px;
   line-height: 80px;
+  text-transform: capitalize;
 }
 
 .line-shadow {

@@ -11,6 +11,19 @@ import Footer from "./Footer";
 import "./styles.css";
 
 export default function App() {
+  let weatherData = {
+    city: "New York",
+    temperature: 19,
+    day: "Tuesday",
+    time: "10:00",
+    date: "29 December",
+    description: "Broken clouds",
+    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+    humidity: 80,
+    wind: 10,
+    realFeel: 14
+  };
+
   return (
     <div className="App">
       <div class="container">
@@ -22,12 +35,19 @@ export default function App() {
           </div>
           <Header />
 
-          <div className="cityName mb-3 mt-4">SAN FRANCISCO</div>
+          <div className="cityName mb-3 mt-4">{weatherData.city}</div>
           <div className="row line-shadow pb-2">
             <div className="col-md-7">
-              <Temperature mainTemp={25} />
-              <Description />
-              <MoreInfo />
+              <Temperature mainTemp={weatherData.temperature} />
+              <Description description={weatherData.description} />
+              <MoreInfo
+                day={weatherData.day}
+                date={weatherData.date}
+                time={weatherData.time}
+                humidity={weatherData.humidity}
+                windSpeed={weatherData.wind}
+                realFeel={weatherData.realFeel}
+              />
             </div>
             <div className="col-md-5 mt-3">
               <Icon />
